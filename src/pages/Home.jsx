@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Navbar/>
-      <div className='bg-[#111] flex flex-col px-8 max-sm:pl-4 pt-24 gap-5'>
+      <div className='bg-[#111] flex flex-col px-8 max-sm:px-5 max-sm:pl-4 pt-24 gap-5'>
         <Hero/>
         <div className='divider mt-9' style={{transform:"rotateX(180deg)"}}></div>
         <About/>
