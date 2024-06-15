@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion, AnimatePresence } from "framer-motion"
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <AnimatePresence>
@@ -26,6 +27,10 @@ const Navbar = () => {
         rounded-[3px] uppercase cursor-pointer text-[14px]'>
             Projects
           </a>
+          <Link to={"/resume"} className='text-[#c7c7c7] t py-[3px] px-[20px] flex justify-center items-center
+            rounded-[3px] uppercase cursor-pointer text-[14px]'>
+            Resume
+          </Link>
           <a href='#about' className='text-[#c7c7c7] t py-[3px] px-[20px] flex justify-center items-center
         rounded-[3px] uppercase cursor-pointer text-[14px]'>
             About

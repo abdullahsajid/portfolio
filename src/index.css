@@ -115,3 +115,6 @@ canvas{
 .load{
     filter: blur(0);
 }
+.bg-resume{
+    background: url('../public/images/grad-bg.jpg') no-repeat center center/cover;
+}

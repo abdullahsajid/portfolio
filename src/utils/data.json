@@ -1,0 +1,79 @@
+{
+    "name":"Abdullah Sajid",
+    "title":"Software Engineer",
+    "description":"I have hands-on experience with the MERN stack from practice and freelance projects. My coursework includes software development with HTML, CSS, JavaScript, and ReactJS. I completed a Responsive Web Design course at FreeCodeCamp. I'm skilled in creating userfriendly interfaces and dynamic web applications with ReactJS. I work well on both front-end and back-end projects, always aiming to meet client needs. I'm eager to use my skills on challenging projects and keep growing in the IT field",
+    "address":"Rawalpindi Wah Cantt",
+    "email":"abdullahsajid521@gmail.com",
+    "phone":"03135172181",
+    "avatar":"./images/bg-black.jpg",
+    "skills":["html","css","c++","JavaScript","ReactJS","Nodejs","ExpressJs","Redux toolkit","RTK","mysql"],
+    "experience":[
+        {
+            "title":"React js Developer Intern",
+            "site":"Onsite",
+            "company":"Super lab",
+            "description":[
+                "Revamp the frontend using React",
+                "Switch state management from MobX to Redux",
+                "Integrate Frontend with the backend",
+                "It's been a steep learning curve.",
+                "I've significantly improved my skills and knowledge."
+            ]
+        }
+    ],
+    "education":[
+        {
+            "institute":"Comsats University Islamabad, Wah Campus",
+            "domain":"Bachelor of software engineering",
+            "description":"08/2020 - 09/2024"
+        }
+    ],
+    "projects":[
+        {
+            "name":"Twitter Clone",
+            "link":"https://twitterclonefrontend.onrender.com/",
+            "description":[
+                "Using the MERN stack",
+                "Create accounts and manage profiles",
+                "Create posts and interact with them (like, comment).",
+                "View and follow other user profiles.",
+                "Built with the monolithic architecture.Use State managed with Redux Toolkit"
+            ]
+        },
+        {
+            "name":"Bakery Management System",
+            "link":"https://github.com/abdullahsajid/bakerymanagementsystem",
+            "description":[
+                "Created with Laravel PHP framework.",
+                "Two user groups: admins and end users.",
+                "Main Feature: Users can create accounts,admins can add products by category",
+                "Supports basic CRUD operations for management"
+            ]
+        }
+    ],
+    "Certificate":[
+        {
+            "name":"Microsoft Web Dev",
+            "link":"https://drive.google.com/file/d/1OrrM7Bf61fzsg8BxMTpiaX6ypKnJhY_8/view",
+            "description":[
+                "Microsoft",
+                "Issued Apr 2024"
+            ]
+        },
+        {
+            "name":"Responsive Web Design",
+            "link":"./images/freecodecamp.PNG",
+            "description":[
+                "freeCodeCamp",
+                "Issued Apr 2021 . Expired Sep 2021"
+            ]
+        }
+    ],
+    "Language":[
+        "English",
+        "Urdu"
+    ],
+    "Interests":[
+        "Anime","Video Games","Football"
+    ]
+}

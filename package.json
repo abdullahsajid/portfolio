@@ -13,6 +13,7 @@
     "react-dom": "^18.2.0",
     "react-ga4": "^2.1.0",
     "react-lazy-load-image-component": "^1.6.0",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
