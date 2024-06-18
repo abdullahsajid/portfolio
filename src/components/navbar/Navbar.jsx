@@ -36,6 +36,12 @@ const Navbar = () => {
             About
           </a>
         </div>
+        <div className='hidden max-sm:flex'>
+          <Link to={"/resume"} className='text-[#c7c7c7] t py-[3px] px-[20px] flex justify-center items-center
+            rounded-[3px] uppercase cursor-pointer text-[14px]'>
+            Resume
+          </Link>
+        </div>
       </motion.div>
     </AnimatePresence>
   )
