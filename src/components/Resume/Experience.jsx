@@ -18,7 +18,7 @@ const Experience = ({data}) => {
                     <div className='flex flex-col gap-1'>
                         <div className='flex gap-2'>
                             <div className='font-semibold'>{item?.title}</div>
-                            <div className='font-mono bg-[#F3F4F6] px-2 py-1 text-xs rounded-md font-extrabold text-[#414652]'>
+                            <div className='font-mono bg-[#F3F4F6] px-2 py-1 text-xs rounded-md font-extrabold text-[#414652] max-sm:h-fit'>
                                 {item?.site}
                             </div>
                         </div>
