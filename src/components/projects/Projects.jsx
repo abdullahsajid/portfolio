@@ -25,16 +25,19 @@ const Projects = () => {
                 skills={['React js','Redux toolkit','TailwindCss','Socket','Node js','Express js','Mongo DB']}
             />
             <ProjectCard
+                img="/images/techlinkhub.png"
+                projectName="Techlinkhub"
+                githubRepo="https://github.com/abdullahsajid/tlhfrontend"
+                link="https://tlhfrontend.vercel.app/"
+                skills={["React.js", "Redux Toolkit", "React Query", "Socket io", "Tailwind CSS",
+                  "Node.js", "Express.js", "Python", "Flask", "Scikit-learn", "Socket io", "Stripe","MySQL"
+                ]}
+            />
+            <ProjectCard
                 img="/images/bms.png"
                 projectName="Bakery Management"
                 githubRepo="https://github.com/abdullahsajid/bakerymanagementsystem"
                 skills={['Php','Laravel','Bootstrap']}
-            />
-            <ProjectCard
-                img="/images/movieland.png"
-                projectName="Movieland"
-                githubRepo="https://github.com/abdullahsajid/movieland"
-                skills={['React js','Apis','CSS3']}
             />
         </div>
       </div>

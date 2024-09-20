@@ -1,13 +1,21 @@
 {
     "name":"Abdullah Sajid",
     "title":"Software Engineer",
-    "description":"I have hands-on experience with the MERN stack from practice and freelance projects. My coursework includes software development with HTML, CSS, JavaScript, and ReactJS. I completed a Responsive Web Design course at FreeCodeCamp. I'm skilled in creating userfriendly interfaces and dynamic web applications with ReactJS. I work well on both front-end and back-end projects, always aiming to meet client needs. I'm eager to use my skills on challenging projects and keep growing in the IT field",
+    "description":"I have hands-on experience with the MERN stack from practice and freelance projects. My coursework includes software development with HTML, CSS, JavaScript, and ReactJS/NextJs. I completed a Responsive Web Design course at FreeCodeCamp. I'm skilled in creating userfriendly interfaces and dynamic web applications with ReactJS/NextJs. I work well on both front-end and back-end projects, always aiming to meet client needs. I'm eager to use my skills on challenging projects and keep growing in the IT field",
     "address":"Islamabad",
     "email":"abdullahsajid521@gmail.com",
     "phone":"03135172181",
     "avatar":"./images/bg-black.jpg",
-    "skills":["html","css","c++","JavaScript","ReactJS","Nodejs","ExpressJs","Redux toolkit","RTK","mysql"],
+    "skills":["html","css","c++","JavaScript","ReactJS","NextJS","Typescript","Nodejs","ExpressJs","Redux toolkit","RTK","mysql"],
     "experience":[
+        {
+            "title":"Full Stack Developer",
+            "site":"Onsite",
+            "company":"Build My Dab",
+            "description":[
+                "07/24 - Present"
+            ]
+        },
         {
             "title":"React js Developer Intern",
             "site":"Onsite",
@@ -29,6 +37,22 @@
         }
     ],
     "projects":[
+        {
+            "name":"Techlinkhub",
+            "link":"https://tlhfrontend.vercel.app/",
+            "description":[
+                "Create and share digital resumes with a shareable link",
+                "Customize user profiles",
+                "Create and manage organizations and posts",
+                "Real-time chat functionality",
+                "Secure payments through Stripe",
+                "Frontend: React.js, Redux Toolkit, React Query, Socket io, Tailwind CSS",
+                "Backend: Node.js, Express.js, Python, Flask, Scikit-learn, Socket io, Stripe",
+                "Database: MySQL",
+                "Architecture: Microservices",
+                "Deployment: Backend on Azure and frontend on Vercel"
+            ]
+        },
         {
             "name":"Twitter Clone",
             "link":"https://twitterclonefrontend.onrender.com/",
