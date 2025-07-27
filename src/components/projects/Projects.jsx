@@ -18,11 +18,10 @@ const Projects = () => {
         </motion.div>
         <div className='grid grid-cols-3 gap-3 max-sm:grid-cols-1'>
             <ProjectCard
-                img="/images/twitter_clone.png"
-                projectName="TwitterClone"
-                githubRepo="https://github.com/abdullahsajid/twitterCloneFrontend"
-                link="https://twitterclonefrontend.onrender.com/"
-                skills={['React js','Redux toolkit','TailwindCss','Socket','Node js','Express js','Mongo DB']}
+                img="/images/pos.png"
+                projectName="POS (Point of Sale) System"
+                githubRepo="https://github.com/abdullahsajid/pos"
+                skills={['C#','SQLite ','MVVM','.NET MAUI ']}
             />
             <ProjectCard
                 img="/images/techlinkhub.png"
@@ -34,10 +33,23 @@ const Projects = () => {
                 ]}
             />
             <ProjectCard
+                img="/images/twitter_clone.png"
+                projectName="TwitterClone"
+                githubRepo="https://github.com/abdullahsajid/twitterCloneFrontend"
+                link="https://twitterclonefrontend.onrender.com/"
+                skills={['React js','Redux toolkit','TailwindCss','Socket','Node js','Express js','Mongo DB']}
+            />
+            <ProjectCard
                 img="/images/bms.png"
                 projectName="Bakery Management"
                 githubRepo="https://github.com/abdullahsajid/bakerymanagementsystem"
                 skills={['Php','Laravel','Bootstrap']}
+            />
+            <ProjectCard
+                img="/images/xvpn.png"
+                projectName="VPN App"
+                githubRepo="https://github.com/abdullahsajid/xvpn"
+                skills={['Dart','C++','CMake','Flutter']}
             />
         </div>
       </div>

@@ -13,7 +13,7 @@ const ProjectImage = ({img}) => {
         <div>
             <LazyLoadImage 
                 src={img}
-                className={`object-cover border-right-ouline transition-all ${imageLoad ? "load" : ''}`}
+                className={`object-cover border-right-ouline transition-all !h-[246px] ${imageLoad ? "load" : ''}`}
                 alt="Twitter Clone"
                 loading='lazy'
                 onLoad={handleImg}
