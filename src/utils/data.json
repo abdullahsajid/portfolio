@@ -1,19 +1,46 @@
 {
     "name":"Abdullah Sajid",
     "title":"Software Engineer",
-    "description":"I have hands-on experience with the MERN stack from practice and freelance projects. My coursework includes software development with HTML, CSS, JavaScript, and ReactJS/NextJs. I completed a Responsive Web Design course at FreeCodeCamp. I'm skilled in creating userfriendly interfaces and dynamic web applications with ReactJS/NextJs. I work well on both front-end and back-end projects, always aiming to meet client needs. I'm eager to use my skills on challenging projects and keep growing in the IT field",
+    "description":"Software engineer with experience building and scaling full-stack applications across web, mobile, and desktop platforms. I focus on creating reliable, maintainable solutions that solve real-world problems. Skilled at working across tech stacks and delivering products that are built to last.",
     "address":"Islamabad",
     "email":"abdullahsajid521@gmail.com",
     "phone":"03135172181",
     "avatar":"./images/bg-black.jpg",
-    "skills":["html","css","c++","JavaScript","ReactJS","NextJS","Typescript","Nodejs","ExpressJs","Redux toolkit","RTK","mysql"],
+    "skills":[
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Redux",
+    "React Query",
+    "Zustand",
+    "Node.js",
+    "Express.js",
+    "Nest.js",
+    "Hono",
+    "MongoDB",
+    "React Native",
+    "Flutter",
+    ".NET MAUI",
+    "Git",
+    "GitHub",
+    "Vercel",
+    "Azure",
+    "AWS (EC2/S3)",
+    "Postman"
+    ],
     "experience":[
         {
             "title":"Full Stack Developer",
             "site":"Onsite",
-            "company":"Build My Dab",
+            "company":"Build My Dab | Jul 2024 - Present",
             "description":[
-                "07/24 - Present"
+                "Responsible for scaling and maintaining backend systems across multiple projects",
+                "Integrated AI tools like OpenAI and Claude to enhance application features.",
+                "Worked with Twitter API and other third-party services for dynamic data handling",
+                "Developed and maintained mobile apps using React Native and Flutter",
+                "Handled payment gateway integration for secure and smooth transactions",
+                "Managed API integration on both frontend and backend for seamless user experiences"
             ]
         },
         {
