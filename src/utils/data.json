@@ -44,15 +44,16 @@
             ]
         },
         {
-            "title":"React js Developer Intern",
-            "site":"Onsite",
-            "company":"Super lab",
-            "description":[
-                "Revamp the frontend using React",
-                "Switch state management from MobX to Redux",
-                "Integrate Frontend with the backend",
-                "It's been a steep learning curve.",
-                "I've significantly improved my skills and knowledge."
+            "title": "Freelance Full Stack Developer",
+            "site": "Remote",
+            "company": "Self-Employed | Jan 2022 – Jun 2025",
+            "description": [
+                "Delivered end-to-end web development solutions for multiple freelance projects",
+                "Built and maintained SaaS applications with robust backend architecture",
+                "Developed AI-powered features including Telegram bot chat integrations",
+                "Created responsive landing pages optimized for performance and SEO",
+                "Worked on both frontend and backend, ensuring seamless integration and deployment",
+                "Collaborated with clients to translate requirements into scalable, user-friendly products"
             ]
         }
     ],

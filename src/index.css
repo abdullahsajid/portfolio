@@ -116,5 +116,5 @@ canvas{
     filter: blur(0);
 }
 .bg-resume{
-    background: url('../public/images/grad-bg.jpg') no-repeat center center/cover;
+    background: url('https://olwasftxn3b3qkl6.public.blob.vercel-storage.com/grad-bg.jpg') no-repeat center center/cover;
 }
