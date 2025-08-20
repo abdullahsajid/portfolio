@@ -1,120 +1,241 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    font-family: -apple-system, BlinkMacSystemFont, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    scroll-behavior: smooth;
+* {
+	font-family: -apple-system, BlinkMacSystemFont, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+	scroll-behavior: smooth;
 }
 @font-face {
-    font-family: 'TESLA';
-    src: local('TESLA'), url("./fonts/TESLA.ttf") format('truetype');
+	font-family: 'TESLA';
+	src: local('TESLA'), url('./fonts/TESLA.ttf') format('truetype');
 }
-.expensive_f{
-    font-family: "TESLA" !important;
-}
-
-.t:hover{
-    background-color: hsla(0,0%,100%,.135);
-}
-.starter_head{
-    font-size: calc(1.5rem + ((1vw - 7.68px) * 1.0416666666666667));
-    font-family: -apple-system, BlinkMacSystemFont, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
-}
-.author_name{
-    font-size: calc(5rem + ((1vw - 7.68px) * 5.555555555555555));
-    font-family: "TESLA" !important;
-}
-.quote{
-    font-size: calc(1.5rem + ((1vw - 7.68px) * 1.0416666666666667));
-    font-family: -apple-system, BlinkMacSystemFont, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
-}
-.hero{
-    background-image: radial-gradient(#393c41, 1px,transparent 0);
-    background-position: -20px -9px;
-    background-size: 20px 20px;
-    position: relative;
-    z-index: 0;
-    
-}
-.hero::before{
-    background-image: linear-gradient(180deg,transparent 0%,#111 100%);;
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
-.cyberpunk{
-    background: linear-gradient(45deg,#393c41 15px,transparent 15px),linear-gradient(#393c41 0 0) bottom left /1px 300px,linear-gradient(#393c41 0 0) bottom left /300px 1px,linear-gradient(transparent 0 0);
-    background-repeat: no-repeat;
-    color: #393c41;
-    clip-path: polygon(0 0,0 0,100% 0,100% 0,100% 100%,100% 100%,20px 100%,0 calc(100% - 20px),0 100%);
-}
-.author_img{
-    /* clip-path: polygon(0 0,0 0,100% 0,100% 0,100% 100%,100% 100%,20px 100%,0 calc(100% - 20px),0 100%); */
-    clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 93% 100%, 13% 100%, 0 100%, 0 8%);
+.expensive_f {
+	font-family: 'TESLA' !important;
 }
 
-.outliner{
-    border: 3px solid #8e8e8e;
-    padding: 3px;
-    background-color: #8e8e8e;
-    clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 93% 100%, 13% 100%, 0 100%, 0 8%);
+.t:hover {
+	background-color: hsla(0, 0%, 100%, 0.135);
 }
-.auth_img{
-    background-image: radial-gradient(#393c41, 1px,transparent 0);
-    background-position: -20px -9px;
-    background-size: 20px 20px;
-    position: relative;
-    z-index: 0;
+.starter_head {
+	font-size: calc(1.5rem + ((1vw - 7.68px) * 1.0416666666666667));
+	font-family: -apple-system, BlinkMacSystemFont, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif !important;
 }
-.auth_img::before{
-    background-image: linear-gradient(180deg,transparent 0%,#111 100%);;
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
+.author_name {
+	font-size: calc(5rem + ((1vw - 7.68px) * 5.555555555555555));
+	font-family: 'TESLA' !important;
 }
-.divider{
-    height: 20px;
-    -webkit-clip-path: polygon(0 0,37% 0,39.5% 19px,60% 19px,62.5% 0,100% 0,100% 1px,64% 1px,64% 0,62.5% 0,62.5% 1px,60% 20px,39.5% 20px,37% 1px,1px 1px);
-    clip-path: polygon(0 0,37% 0,39.5% 19px,60% 19px,62.5% 0,100% 0,100% 1px,64% 1px,64% 0,65% 0,62.5% 1px,60% 20px,39.5% 20px,37% 1px,1px 1px);
-    background-color: #393c41;
+.quote {
+	font-size: calc(1.5rem + ((1vw - 7.68px) * 1.0416666666666667));
+	font-family: -apple-system, BlinkMacSystemFont, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif !important;
 }
-.project_card{
-    /* background-color: #111; */
-    border:max(1px, 0.0625rem,1px) solid #30363d;
-    /* clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 90%, 86% 100%, 20% 100%, 0 100%, 0% 20%); */
-    background: radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%);
+.hero {
+	background-image: radial-gradient(#393c41, 1px, transparent 0);
+	background-position: -20px -9px;
+	background-size: 20px 20px;
+	position: relative;
+	z-index: 0;
 }
-.border-right-ouline{
-    /* clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 91%, 92% 100%, 20% 100%, 0 100%, 0% 20%); */
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%);
-    transition: all 0.4s;
-            filter: blur(100px);
-            overflow: hidden;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+.hero::before {
+	background-image: linear-gradient(180deg, transparent 0%, #111 100%);
+	bottom: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
 }
-.skills{
-    border:max(1px, 0.0625rem,1px) solid #30363d;
-    background: radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%);
+.cyberpunk {
+	background: linear-gradient(45deg, #393c41 15px, transparent 15px),
+		linear-gradient(#393c41 0 0) bottom left / 1px 300px,
+		linear-gradient(#393c41 0 0) bottom left / 300px 1px,
+		linear-gradient(transparent 0 0);
+	background-repeat: no-repeat;
+	color: #393c41;
+	clip-path: polygon(
+		0 0,
+		0 0,
+		100% 0,
+		100% 0,
+		100% 100%,
+		100% 100%,
+		20px 100%,
+		0 calc(100% - 20px),
+		0 100%
+	);
 }
-canvas{
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%);
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
+.author_img {
+	/* clip-path: polygon(0 0,0 0,100% 0,100% 0,100% 100%,100% 100%,20px 100%,0 calc(100% - 20px),0 100%); */
+	clip-path: polygon(
+		8% 0,
+		92% 0,
+		100% 8%,
+		100% 92%,
+		93% 100%,
+		13% 100%,
+		0 100%,
+		0 8%
+	);
 }
-.load{
-    filter: blur(0);
+
+.outliner {
+	border: 3px solid #8e8e8e;
+	padding: 3px;
+	background-color: #8e8e8e;
+	clip-path: polygon(
+		8% 0,
+		92% 0,
+		100% 8%,
+		100% 92%,
+		93% 100%,
+		13% 100%,
+		0 100%,
+		0 8%
+	);
 }
-.bg-resume{
-    background: url('https://olwasftxn3b3qkl6.public.blob.vercel-storage.com/grad-bg.jpg') no-repeat center center/cover;
+.auth_img {
+	background-image: radial-gradient(#393c41, 1px, transparent 0);
+	background-position: -20px -9px;
+	background-size: 20px 20px;
+	position: relative;
+	z-index: 0;
+}
+.auth_img::before {
+	background-image: linear-gradient(180deg, transparent 0%, #111 100%);
+	bottom: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+.divider {
+	height: 20px;
+	-webkit-clip-path: polygon(
+		0 0,
+		37% 0,
+		39.5% 19px,
+		60% 19px,
+		62.5% 0,
+		100% 0,
+		100% 1px,
+		64% 1px,
+		64% 0,
+		62.5% 0,
+		62.5% 1px,
+		60% 20px,
+		39.5% 20px,
+		37% 1px,
+		1px 1px
+	);
+	clip-path: polygon(
+		0 0,
+		37% 0,
+		39.5% 19px,
+		60% 19px,
+		62.5% 0,
+		100% 0,
+		100% 1px,
+		64% 1px,
+		64% 0,
+		65% 0,
+		62.5% 1px,
+		60% 20px,
+		39.5% 20px,
+		37% 1px,
+		1px 1px
+	);
+	background-color: #393c41;
+}
+.project_card {
+	/* background-color: #111; */
+	border: max(1px, 0.0625rem, 1px) solid #30363d;
+	/* clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 90%, 86% 100%, 20% 100%, 0 100%, 0% 20%); */
+	background: radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%),
+		radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%);
+}
+.border-right-ouline {
+	/* clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 91%, 92% 100%, 20% 100%, 0 100%, 0% 20%); */
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% calc(100% - 20px),
+		calc(100% - 20px) 100%,
+		0 100%
+	);
+	transition: all 0.4s;
+	filter: blur(100px);
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.skills {
+	border: max(1px, 0.0625rem, 1px) solid #30363d;
+	background: radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%),
+		radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%);
+}
+canvas {
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% calc(100% - 20px),
+		calc(100% - 20px) 100%,
+		0 100%
+	);
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+.load {
+	filter: blur(0);
+}
+.bg-resume {
+	background: url('https://olwasftxn3b3qkl6.public.blob.vercel-storage.com/grad-bg.jpg')
+		no-repeat center center/cover;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.animation-delay-200 {
+	animation-delay: 0.2s;
+}
+.animation-delay-400 {
+	animation-delay: 0.4s;
+}
+.animation-delay-2000 {
+	animation-delay: 2s;
+}
+.animation-delay-4000 {
+	animation-delay: 4s;
+}
+
+/* Custom scrollbar */
+.overflow-y-auto::-webkit-scrollbar {
+	width: 6px;
+}
+.overflow-y-auto::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 3px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 3px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.1);
 }
