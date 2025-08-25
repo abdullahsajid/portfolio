@@ -38,21 +38,21 @@ function App() {
         </React.Suspense>
       ),
     },
-    {
-      path: "/ai",
-      errorElement: <div>Something went wrong!</div>,
-      element: (
-        <React.Suspense
-          fallback={
-            <div className="flex justify-center items-center w-full h-screen">
-              Loading...
-            </div>
-          }
-        >
-          <Chat />
-        </React.Suspense>
-      ),
-    },
+    // {
+    //   path: "/ai",
+    //   errorElement: <div>Something went wrong!</div>,
+    //   element: (
+    //     <React.Suspense
+    //       fallback={
+    //         <div className="flex justify-center items-center w-full h-screen">
+    //           Loading...
+    //         </div>
+    //       }
+    //     >
+    //       <Chat />
+    //     </React.Suspense>
+    //   ),
+    // },
   ])
   return <RouterProvider router={router} />
 }
