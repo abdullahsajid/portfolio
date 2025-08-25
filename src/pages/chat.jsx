@@ -54,7 +54,7 @@ const Chat = () => {
       }
       const formData = new FormData();
       formData.append("prompt", prompt);
-      
+      let payload = {prompt: prompt}
       setChat({
         id: chat.length + 1,
         type: "user",
@@ -71,7 +71,7 @@ const Chat = () => {
       setValue("");
       const token = await generateToken();
       console.log("tokne",token)
-      const response = await chatApi(formData,token);
+      const response = await chatApi(payload,token);
 
       const reader = response.body?.getReader();
       const decoder = new TextDecoder();
