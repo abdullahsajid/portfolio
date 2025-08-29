@@ -35,10 +35,6 @@ const Chat = () => {
     }
   ];
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [chat]);
-
   const handleSubmit = async (promptValue) => {
     let chatId;
     try {
@@ -145,6 +141,10 @@ const Chat = () => {
       textareaRef.current?.focus();
     }, 100);
   };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [chat]);
 
   return (
     <div className="bg-gradient-to-br from-[#111] via-[#111] to-[#111] flex flex-col relative h-screen">
