@@ -16,7 +16,7 @@ const Chat = () => {
 
   const samplePrompts = [
     {
-      text: "What makes Abdullah stand out as a developer?",
+      text: "Explain a complex coding concept as if I were 5 years old.",
     },
     {
       text: "Is Abdullah a good fit for our company?",
@@ -25,10 +25,10 @@ const Chat = () => {
       text: "Tell me about Abdullah's most impressive projects",
     },
     {
-      text: "Can Abdullah handle working with tight deadlines and lots of coffee?",
+      text: "What would life be like if humans could teleport but only once a day?",
     },
     {
-      text: "What programming languages does Abdullah master?",
+      text: "How would you build a modern website with React and Tailwind CSS?",
     },
     {
       text: "Does Abdullah work well in team environments?",
@@ -40,6 +40,7 @@ const Chat = () => {
   }, [chat]);
 
   const handleSubmit = async (promptValue) => {
+    let chatId;
     try {
       let userId = localStorage.getItem("portfolio-userId");
       let requestCount = localStorage.getItem("portfolio-requestCount");
@@ -62,6 +63,7 @@ const Chat = () => {
       });
     
       let getId = chat.length + 2;
+      chatId = getId;
       setChat({
         id: getId,
         type: "agent",
@@ -111,6 +113,7 @@ const Chat = () => {
       );
     } catch (error) {
       setIsLoading(false);
+      updateChat(chatId, "I Suspect your out of tokens", false);
     } finally {
       setIsLoading(false);
     }
