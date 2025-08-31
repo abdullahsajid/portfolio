@@ -23,6 +23,10 @@ const Navbar = () => {
         rounded-[3px] uppercase cursor-pointer text-[14px]'>
             Home
           </a>
+          <Link to={"/ai"} className='text-[#c7c7c7] t py-[3px] px-[20px] flex justify-center items-center
+            rounded-[3px] uppercase cursor-pointer text-[14px]'>
+            AI
+          </Link>
           <a href='#projects' className='text-[#c7c7c7] t py-[3px] px-[20px] flex justify-center items-center
         rounded-[3px] uppercase cursor-pointer text-[14px]'>
             Projects
@@ -37,6 +41,10 @@ const Navbar = () => {
           </a>
         </div>
         <div className='hidden max-sm:flex'>
+          <Link to={"/ai"} className='text-[#c7c7c7] t py-[3px] px-[20px] flex justify-center items-center
+            rounded-[3px] uppercase cursor-pointer text-[14px]'>
+            AI
+          </Link>
           <Link to={"/resume"} className='text-[#c7c7c7] t py-[3px] px-[20px] flex justify-center items-center
             rounded-[3px] uppercase cursor-pointer text-[14px]'>
             Resume

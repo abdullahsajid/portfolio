@@ -14,6 +14,12 @@ const Chat = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  useEffect(() => {
+    if (chat.length > 0) {
+      setShowSamples(false);
+    }
+  }, [chat]);
+
   const samplePrompts = [
     {
       text: "Explain a complex coding concept as if I were 5 years old.",
@@ -45,7 +51,7 @@ const Chat = () => {
       if (!userId) {
         userId = generateUnixTimestampId();
       }
-      if (Number(requestCount) >= 3) {
+      if (Number(requestCount) >= 6) {
         setChatLimit(true);
         return;
       }
@@ -56,6 +62,7 @@ const Chat = () => {
         id: chat.length + 1,
         type: "user",
         text: prompt,
+        timestamp: new Date().toISOString()
       });
     
       let getId = chat.length + 2;
@@ -65,10 +72,11 @@ const Chat = () => {
         type: "agent",
         text: "",
         isThinking: true,
+        timestamp: new Date().toISOString()
       });
       setValue("");
       const token = await generateToken();
-      console.log("tokne",token)
+      
       const response = await chatApi(payload,token);
 
       const reader = response.body?.getReader();
@@ -96,6 +104,7 @@ const Chat = () => {
             } catch (parseError) {
               setIsLoading(false);
               console.error("Error parsing JSON:", parseError);
+              updateChat(getId, accumulatedResponse + "\n\nI think you might be out of tokens.", false);
               setValue("");
             }
           }
@@ -145,6 +154,11 @@ const Chat = () => {
   useEffect(() => {
     scrollToBottom();
   }, [chat]);
+
+  const formatTimestamp = (timestamp) => {
+    if (!timestamp) return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    return new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
 
   return (
     <div className="bg-gradient-to-br from-[#111] via-[#111] to-[#111] flex flex-col relative h-screen">
@@ -241,7 +255,7 @@ const Chat = () => {
                   )}
                 </div>
                 <div className={`text-xs text-gray-400 mt-1 ${message.type === 'user' ? 'text-right' : 'text-left'}`}>
-                  {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                  {formatTimestamp(message.timestamp)}
                 </div>
               </div>
 
@@ -266,7 +280,7 @@ const Chat = () => {
                 <Zap className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Chat Limit Reached</h3>
-              <p className="text-gray-300 mb-6">You've reached your daily chat limit. Come back tomorrow for more conversations!</p>
+              <p className="text-gray-300 mb-6">You've reached your chat limit. Please try again later.</p>
               <button
                 onClick={() => setChatLimit(false)}
                 className="w-full px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-xl font-medium transition-all duration-200"
@@ -313,6 +327,9 @@ const Chat = () => {
             
             <div className="flex items-center justify-between mt-2 px-2">
               <div className="flex items-center gap-4 text-xs text-gray-400">
+                {chat.length > 0 && (
+                  <span>{chat.length} current messages | your maximum chat limit is 6</span>
+                )}
               </div>
               <div className="text-xs text-gray-400">
                 Enter to send • Shift+Enter for new line
