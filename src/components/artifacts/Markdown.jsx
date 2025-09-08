@@ -88,12 +88,11 @@ const MarkdownResponse = ({ content }) => {
 						{...props}
 					/>
 				),
-				li: ({ node, children, ...props }) => {
+				li: ({ node, ...props }) => {
 						<li
 							className={`text-base leading-relaxed`}
-							{...props}>
-							{children}
-						</li>
+							{...props}
+						/>
 				},
 				h1: ({ node, ...props }) => (
 					<h1
