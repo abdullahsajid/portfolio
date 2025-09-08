@@ -327,9 +327,9 @@ const Chat = () => {
             
             <div className="flex items-center justify-between mt-2 px-2">
               <div className="flex items-center gap-4 text-xs text-gray-400">
-                {chat.length > 0 && (
-                  <span>{chat.length} current messages | your maximum chat limit is 6</span>
-                )}
+                {/* {chat.length > 0 && (
+                  <span>{chat.length - 1} current messages | your maximum chat limit is 6</span>
+                )} */}
               </div>
               <div className="text-xs text-gray-400">
                 Enter to send • Shift+Enter for new line
