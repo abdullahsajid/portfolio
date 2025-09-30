@@ -41,7 +41,7 @@ const About = () => {
                     transition={{duration:0.5,delay:0.25}}
                     viewport={{ once: true }}
                     className='outliner'>
-                    <img src="/images/bg-black.jpg" 
+                    <img src="/images/me.png" 
                         className='object-cover h-[300px] max-sm:w-[200px] max-sm:h-[200px] author_img '
                         alt="Abdullah sajid" />
                 </motion.div>
