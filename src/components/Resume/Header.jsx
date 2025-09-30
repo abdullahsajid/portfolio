@@ -32,7 +32,7 @@ const Header = ({data}) => {
                 </div>
             </div>
             {<div className='relative flex shrink-0 overflow-hidden rounded-xl w-[7rem] h-[7rem]'>
-                <img src={`${data?.avatar}`} className='aspect-square h-full w-full' style={{ object-fit: cover; }} />
+                <img src={`${data?.avatar}`} className='aspect-square h-full w-full' style={{ "object-fit": "cover" }} />
             </div>}
         </div>
   )
