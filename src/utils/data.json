@@ -66,6 +66,17 @@
         }
     ],
     "projects":[
+         {
+            "name":"Conversational AI Bot (Dialogflow)",
+            "link":"#",
+            "description":[
+                "Designed and implemented conversational flows using Dialogflow",
+                "Created intents, entities, and context-based conversations",
+                "Integrated webhook fulfillment using Node.js for dynamic responses",
+                "Handled fallback intents and conversation edge cases",
+                "Tested and refined NLP accuracy through training phrase optimization",
+            ]
+        },
         {
             "name":"Techlinkhub",
             "link":"https://tlhfrontend.vercel.app/",
